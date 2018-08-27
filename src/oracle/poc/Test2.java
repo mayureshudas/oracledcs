@@ -8,14 +8,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Test2 {
 
 	@Test
 	public void test() {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Administrator\\Downloads\\chromedriver_win32\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Administrator\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		//WebDriver driver=new ChromeDriver();
+		WebDriver driver=new FirefoxDriver();
 		 driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		 driver.manage().window().maximize();
 		 driver.get("https://cloud.oracle.com/en_US/sign-in");
